@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyBookcaseCell" customModule="HywebDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="95" height="178"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="95" height="178"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7y-8Z-PkY">
+                        <rect key="frame" x="0.0" y="0.0" width="95" height="178"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bookname" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdP-bB-tz5">
+                                <rect key="frame" x="0.0" y="138" width="95" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5He-4F-gUx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="73m-84-vvF">
+                                <rect key="frame" x="0.0" y="0.0" width="95" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="73m-84-vvF" secondAttribute="height" multiplier="5:7" id="oct-ml-OBj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAd-ms-EKE">
+                                <rect key="frame" x="69" y="9" width="19" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YAd-ms-EKE" secondAttribute="height" multiplier="20:17" id="gVm-xD-MY0"/>
+                                </constraints>
+                                <state key="normal" image="ic_favorite"/>
+                                <connections>
+                                    <action selector="favoriteButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="RqU-ED-QLJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YAd-ms-EKE" firstAttribute="width" secondItem="73m-84-vvF" secondAttribute="width" multiplier="1:5" id="0Kb-bX-dHt"/>
+                            <constraint firstAttribute="trailing" secondItem="YAd-ms-EKE" secondAttribute="trailing" constant="7" id="7Ol-3F-lH2"/>
+                            <constraint firstItem="73m-84-vvF" firstAttribute="top" secondItem="V7y-8Z-PkY" secondAttribute="top" id="Iem-vo-kZh"/>
+                            <constraint firstItem="73m-84-vvF" firstAttribute="leading" secondItem="V7y-8Z-PkY" secondAttribute="leading" id="LFg-C1-BCT"/>
+                            <constraint firstAttribute="trailing" secondItem="73m-84-vvF" secondAttribute="trailing" id="RCD-Pe-FNn"/>
+                            <constraint firstItem="wdP-bB-tz5" firstAttribute="top" secondItem="73m-84-vvF" secondAttribute="bottom" constant="5" id="W6n-fn-9Gj"/>
+                            <constraint firstItem="wdP-bB-tz5" firstAttribute="trailing" secondItem="73m-84-vvF" secondAttribute="trailing" id="Xoi-9T-9BA"/>
+                            <constraint firstAttribute="bottom" secondItem="wdP-bB-tz5" secondAttribute="bottom" id="YSb-dh-qXc"/>
+                            <constraint firstItem="wdP-bB-tz5" firstAttribute="leading" secondItem="73m-84-vvF" secondAttribute="leading" id="iHX-NB-dIc"/>
+                            <constraint firstItem="YAd-ms-EKE" firstAttribute="top" secondItem="V7y-8Z-PkY" secondAttribute="top" constant="9" id="rhA-xk-WkA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="V7y-8Z-PkY" secondAttribute="trailing" id="AuM-Dx-Iok"/>
+                <constraint firstAttribute="bottom" secondItem="V7y-8Z-PkY" secondAttribute="bottom" id="mRt-eC-w6w"/>
+                <constraint firstItem="V7y-8Z-PkY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oOJ-8T-cHI"/>
+                <constraint firstItem="V7y-8Z-PkY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pYY-YU-OxZ"/>
+            </constraints>
+            <connections>
+                <outlet property="bookNameLabel" destination="wdP-bB-tz5" id="Ndh-jK-xHn"/>
+                <outlet property="coverImageView" destination="73m-84-vvF" id="aeN-dk-ycB"/>
+                <outlet property="favoriteButton" destination="YAd-ms-EKE" id="xGF-B5-nra"/>
+            </connections>
+            <point key="canvasLocation" x="139.85507246376812" y="97.098214285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_favorite" width="21" height="18"/>
+    </resources>
+</document>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H1922" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Book" representedClassName="Book" syncable="YES">
+        <attribute name="author" attributeType="String"/>
+        <attribute name="coverUrl" attributeType="String"/>
+        <attribute name="publishDate" attributeType="String"/>
+        <attribute name="publisher" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="uuid" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Favorite" representedClassName="Favorite" syncable="YES">
+        <attribute name="uuid" attributeType="Integer 64" defaultValueString="-1" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="Book" positionX="-3852.05859375" positionY="-1143.9296875" width="128" height="133"/>
+        <element name="Favorite" positionX="-3852" positionY="-1098" width="128" height="58"/>
+    </elements>
+</model>
